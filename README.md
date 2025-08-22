@@ -5,3 +5,9 @@ Core API for Zyto.
 - `/plan` POST — create plan from NL prompt
 - `/runs` CRUD — list/read runs
 - `/events` WS — stream run events
+
+## Dev
+```bash
+npm ci
+cp .env.example .env
+npm run dev
