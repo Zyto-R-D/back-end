@@ -1,0 +1,17 @@
+{
+  "name": "@zyto/back-end",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "HTTP + WebSocket API for planning, runs, and audit logs.",
+  "main": "dist/server.js",
+  "types": "dist/server.d.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/server.js",
+    "lint": "eslint . --ext .ts",
+    "test": "vitest run",
+    "prepare": "husky install"
+  },
